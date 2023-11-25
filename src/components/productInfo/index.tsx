@@ -9,6 +9,7 @@ import {
   ProductInfoWrapper,
   ProductInfoContainer,
   ProductInfoHeader,
+  PromotionContainer,
 } from './styles'
 
 import productImage from '../../assets/product-image.svg'
@@ -17,6 +18,8 @@ import userPhoto from '../../assets/user-photo.svg'
 import starsImage from '../../assets/stars.svg'
 import verifiedLogo from '../../assets/verified-icon.svg'
 import stars2Image from '../../assets/stars2.svg'
+import percentLogo from '../../assets/percent.svg'
+import { ProductFeatures } from '../productFeatures'
 
 export const ProductInfo: React.FC = () => {
   return (
@@ -73,6 +76,17 @@ export const ProductInfo: React.FC = () => {
             </span>
           </ProductInfoWrapper>
         </ProductInfoContainer>
+        <ProductFeatures />
+        <PromotionContainer>
+          <div className="logoWrapper">
+            <img src={percentLogo} alt="" />
+          </div>
+          <span>
+            Save <span className="highlightedText">53%</span> and get
+            <span className="highlightedText">6 extra Clarifision</span> for
+            only <span className="highlightedText">$14 Each</span>.
+          </span>
+        </PromotionContainer>
       </RightWrapper>
     </ProductContainer>
   )

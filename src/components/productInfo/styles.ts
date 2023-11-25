@@ -164,3 +164,38 @@ export const ProductInfoWrapper = styled.div`
     background: ${({ theme }) => theme.blue};
   }
 `
+
+export const PromotionContainer = styled.div`
+  padding: 0.75rem 1rem;
+  background: #edf3fd;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+
+  margin-bottom: 2rem;
+
+  img {
+    margin-right: 1rem;
+  }
+
+  .logoWrapper {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: ${({ theme }) => theme.blue};
+
+    padding: 6px;
+  }
+
+  span {
+    color: ${({ theme }) => theme.black};
+    font-size: 1rem;
+
+    .highlightedText {
+      color: ${({ theme }) => theme.blue};
+    }
+  }
+`
