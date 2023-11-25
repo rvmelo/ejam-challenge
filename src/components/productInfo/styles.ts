@@ -59,4 +59,108 @@ export const UserInfoContainer = styled.div`
   }
 `
 
-export const RightWrapper = styled.div``
+export const RightWrapper = styled.div`
+  .topText {
+    color: ${({ theme }) => theme.black};
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+
+  .topHighlightedText {
+    color: ${({ theme }) => theme.blue};
+  }
+`
+
+export const ProductInfoContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  margin: 2.03125rem 0;
+
+  .imageWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: ${({ theme }) => theme.blue};
+    width: 8.375rem;
+    height: 8.375rem;
+    border-radius: 10px;
+  }
+`
+
+export const ProductInfoHeader = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 0.9375rem;
+
+  span {
+    color: ${({ theme }) => theme.black};
+    font-size: 1.25rem;
+  }
+
+  .priceText {
+    color: ${({ theme }) => theme.gray59};
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .highlightedPriceText {
+    color: ${({ theme }) => theme.blue};
+    font-size: 1.375rem;
+    font-weight: 600;
+  }
+`
+
+export const ProductInfoWrapper = styled.div`
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+  .starsImage {
+    width: 6.125rem;
+    height: 1.125rem;
+  }
+
+  .productDescription {
+    color: ${({ theme }) => theme.gray};
+    font-size: 1rem;
+    line-height: 1.4rem;
+    text-align: left;
+  }
+
+  .stockAmountWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+
+    color: ${({ theme }) => theme.cyanBlueDarkShade};
+    font-size: 1rem;
+    font-weight: 300;
+
+    margin: 0.9375rem 0;
+  }
+
+  .stockIndicator {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: ${({ theme }) => theme.lightBlue};
+  }
+
+  .stockInnerIndicator {
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 50%;
+
+    background: ${({ theme }) => theme.blue};
+  }
+`

@@ -6,12 +6,17 @@ import {
   UserFeedbackContainer,
   UserHeaderContainer,
   UserInfoContainer,
+  ProductInfoWrapper,
+  ProductInfoContainer,
+  ProductInfoHeader,
 } from './styles'
 
 import productImage from '../../assets/product-image.svg'
+import productSmallImage from '../../assets/product-small-image.svg'
 import userPhoto from '../../assets/user-photo.svg'
 import starsImage from '../../assets/stars.svg'
 import verifiedLogo from '../../assets/verified-icon.svg'
+import stars2Image from '../../assets/stars2.svg'
 
 export const ProductInfo: React.FC = () => {
   return (
@@ -38,7 +43,36 @@ export const ProductInfo: React.FC = () => {
         </UserFeedbackContainer>
       </LeftWrapper>
       <RightWrapper>
-        <span>right wrapper</span>
+        <span className="topText">
+          <span className="topHighlightedText">ONE TIME ONLY</span> special
+          price for 6 extra Clarifion for only{' '}
+          <span className="topHighlightedText">$14 each</span> ($84.00 total!)
+        </span>
+        <ProductInfoContainer>
+          <div className="imageWrapper">
+            <img src={productSmallImage} alt="" />
+          </div>
+          <ProductInfoWrapper>
+            <ProductInfoHeader>
+              <span>Clarifion Air Ionizer</span>
+              <div>
+                <span className="priceText">$180</span>
+                <span className="highlightedPriceText"> $84</span>
+              </div>
+            </ProductInfoHeader>
+            <img className="starsImage" src={stars2Image} alt="" />
+            <div className="stockAmountWrapper">
+              <div className="stockIndicator">
+                <div className="stockInnerIndicator"></div>
+              </div>
+              <span>12 left in Stock</span>
+            </div>
+            <span className="productDescription">
+              Simply plug a Clarifion into any standard outlet and replace
+              bulky, expensive air purifiers with a simple.
+            </span>
+          </ProductInfoWrapper>
+        </ProductInfoContainer>
       </RightWrapper>
     </ProductContainer>
   )
