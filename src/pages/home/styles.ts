@@ -6,5 +6,29 @@ export const LogoContainer = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  padding: 1.875rem 7.9375rem;
+  padding: 1.875rem 0;
+`
+
+export const ContentWrapper = styled.div`
+  padding: 0 7.9375rem;
+`
+
+export const OrderTextContainer = styled.div`
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 3.75rem;
+
+  .orderText {
+    color: ${({ theme }) => theme.black};
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .orderInfoText {
+    color: ${({ theme }) => theme.gray};
+    font-size: 1.5rem;
+    text-align: center;
+  }
 `

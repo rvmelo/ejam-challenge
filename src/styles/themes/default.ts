@@ -4,4 +4,5 @@ export const defaultTheme = {
   blue: '#2C7EF8',
   cyanBlue: '#252f3d',
   green: '#85BF55',
+  gray: '#4D5254',
 }
