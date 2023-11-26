@@ -22,6 +22,7 @@ import stars2Image from '../../assets/stars2.svg'
 import percentLogo from '../../assets/percent.svg'
 import rightArrowLogo from '../../assets/right-arrow.svg'
 import { ProductFeatures } from '../productFeatures'
+import { PurchaseInfo } from '../purchaseInfo'
 
 export const ProductInfo: React.FC = () => {
   return (
@@ -93,6 +94,7 @@ export const ProductInfo: React.FC = () => {
           <span>Yes - Claim my discount</span>
           <img src={rightArrowLogo} alt="" />
         </DiscountButton>
+        <PurchaseInfo />
       </RightWrapper>
     </ProductContainer>
   )
