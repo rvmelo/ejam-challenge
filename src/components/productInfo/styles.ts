@@ -199,3 +199,29 @@ export const PromotionContainer = styled.div`
     }
   }
 `
+
+export const DiscountButton = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1.25rem;
+
+  span {
+    font-size: 1.25rem;
+    color: ${({ theme }) => theme.white};
+    font-weight: 700;
+  }
+
+  border-radius: 50px;
+  width: 100%;
+
+  padding: 1rem;
+
+  margin-bottom: 0.75rem;
+
+  cursor: pointer;
+
+  background: ${({ theme }) => theme.green3};
+`

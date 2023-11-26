@@ -10,6 +10,7 @@ import {
   ProductInfoContainer,
   ProductInfoHeader,
   PromotionContainer,
+  DiscountButton,
 } from './styles'
 
 import productImage from '../../assets/product-image.svg'
@@ -19,6 +20,7 @@ import starsImage from '../../assets/stars.svg'
 import verifiedLogo from '../../assets/verified-icon.svg'
 import stars2Image from '../../assets/stars2.svg'
 import percentLogo from '../../assets/percent.svg'
+import rightArrowLogo from '../../assets/right-arrow.svg'
 import { ProductFeatures } from '../productFeatures'
 
 export const ProductInfo: React.FC = () => {
@@ -87,6 +89,10 @@ export const ProductInfo: React.FC = () => {
             only <span className="highlightedText">$14 Each</span>.
           </span>
         </PromotionContainer>
+        <DiscountButton>
+          <span>Yes - Claim my discount</span>
+          <img src={rightArrowLogo} alt="" />
+        </DiscountButton>
       </RightWrapper>
     </ProductContainer>
   )
