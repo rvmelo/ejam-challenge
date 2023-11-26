@@ -60,6 +60,10 @@ export const UserInfoContainer = styled.div`
 `
 
 export const RightWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   .topText {
     color: ${({ theme }) => theme.black};
     font-size: 2rem;
@@ -224,4 +228,41 @@ export const DiscountButton = styled.div`
   cursor: pointer;
 
   background: ${({ theme }) => theme.green3};
+`
+
+export const RefuseButton = styled.div`
+  cursor: pointer;
+  margin-bottom: 2rem;
+
+  span {
+    color: ${({ theme }) => theme.red};
+    font-size: 1.125rem;
+    font-weight: 500;
+    /* text-decoration: underline; */
+  }
+
+  div {
+    width: 100%;
+    height: 0.25px;
+    border: 0.25px solid ${({ theme }) => theme.red};
+  }
+`
+
+export const GuaranteeContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: 1rem;
+
+  span {
+    color: ${({ theme }) => theme.gray};
+    font-size: 1rem;
+    line-height: 1.4rem;
+
+    .highlightedText {
+      color: ${({ theme }) => theme.gray};
+      font-weight: 700;
+    }
+  }
 `

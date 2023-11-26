@@ -12,4 +12,5 @@ export const defaultTheme = {
   gray98: '#FAFAFA',
   gray20: '#333333',
   gray59: '#969696',
+  red: '#F82C2C',
 }

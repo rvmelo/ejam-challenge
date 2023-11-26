@@ -10,6 +10,8 @@ export const PurchaseContainer = styled.div`
   border-radius: 4px;
   padding: 0.5rem 1rem;
 
+  margin-bottom: 1.25rem;
+
   span {
     color: ${({ theme }) => theme.gray};
     font-size: 0.75rem;

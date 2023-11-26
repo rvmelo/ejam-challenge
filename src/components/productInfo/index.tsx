@@ -11,6 +11,8 @@ import {
   ProductInfoHeader,
   PromotionContainer,
   DiscountButton,
+  RefuseButton,
+  GuaranteeContainer,
 } from './styles'
 
 import productImage from '../../assets/product-image.svg'
@@ -21,6 +23,7 @@ import verifiedLogo from '../../assets/verified-icon.svg'
 import stars2Image from '../../assets/stars2.svg'
 import percentLogo from '../../assets/percent.svg'
 import rightArrowLogo from '../../assets/right-arrow.svg'
+import guaranteeLogo from '../../assets/guarantee-logo.svg'
 import { ProductFeatures } from '../productFeatures'
 import { PurchaseInfo } from '../purchaseInfo'
 
@@ -95,6 +98,21 @@ export const ProductInfo: React.FC = () => {
           <img src={rightArrowLogo} alt="" />
         </DiscountButton>
         <PurchaseInfo />
+        <RefuseButton>
+          <span>NO THANKS, I DON&apos;T WANT THIS.</span>
+          <div />
+        </RefuseButton>
+        <GuaranteeContainer>
+          <img src={guaranteeLogo} alt="" />
+          <span>
+            If you are not completely thrilled with your Clarifion - We have a{' '}
+            <span className="highlightedText">
+              30 day satisfaction guarantee.{' '}
+            </span>
+            Please refer to our return policy at the bottom of the page for more
+            details. Happy Shopping!
+          </span>
+        </GuaranteeContainer>
       </RightWrapper>
     </ProductContainer>
   )
