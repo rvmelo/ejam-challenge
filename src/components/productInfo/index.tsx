@@ -13,6 +13,7 @@ import {
   DiscountButton,
   RefuseButton,
   GuaranteeContainer,
+  ProductDescriptionMobile,
 } from './styles'
 
 import productImage from '../../assets/product-image.svg'
@@ -89,6 +90,14 @@ export const ProductInfo: React.FC = () => {
             </span>
           </ProductInfoWrapper>
         </ProductInfoContainer>
+
+        <ProductDescriptionMobile>
+          <span>
+            Simply plug a Clarifion into any standard outlet and replace bulky,
+            expensive air purifiers with a simple.
+          </span>
+        </ProductDescriptionMobile>
+
         <ProductFeatures />
         <PromotionContainer>
           <div className="logoWrapper">

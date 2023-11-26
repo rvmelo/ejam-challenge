@@ -11,6 +11,7 @@ export const ProductContainer = styled.div`
   margin: 2.5rem 0 3.8125rem;
 
   @media (max-width: 430px) {
+    gap: 1.5rem;
     padding: 0;
     flex-direction: column;
     margin: 1.5rem 0 0;
@@ -22,6 +23,12 @@ export const LeftWrapper = styled.div`
   flex-direction: column;
 
   gap: 1.5rem;
+
+  @media (min-width: 430px) {
+    .topText-mobile {
+      display: none;
+    }
+  }
 
   @media (max-width: 430px) {
     .topText-mobile {
@@ -53,6 +60,10 @@ export const UserFeedbackContainer = styled.div`
     color: ${({ theme }) => theme.gray};
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  @media (max-width: 430px) {
+    display: none;
   }
 `
 
@@ -121,6 +132,23 @@ export const ProductInfoContainer = styled.div`
     height: 8.375rem;
     border-radius: 10px;
   }
+
+  @media (max-width: 430px) {
+    margin: 0;
+    gap: 1rem;
+    width: 100%;
+    padding: 0 1.25rem;
+
+    .imageWrapper {
+      width: 5rem;
+      height: 5rem;
+
+      img {
+        width: 5rem;
+        height: 5rem;
+      }
+    }
+  }
 `
 
 export const ProductInfoHeader = styled.div`
@@ -147,6 +175,22 @@ export const ProductInfoHeader = styled.div`
     font-size: 1.375rem;
     font-weight: 600;
   }
+
+  @media (max-width: 430px) {
+    margin-bottom: 0.625rem;
+
+    span {
+      font-size: 0.875rem;
+    }
+
+    .priceText {
+      font-size: 0.625rem;
+    }
+
+    .highlightedPriceText {
+      font-size: 0.625rem;
+    }
+  }
 `
 
 export const ProductInfoWrapper = styled.div`
@@ -172,9 +216,11 @@ export const ProductInfoWrapper = styled.div`
     align-items: center;
     gap: 6px;
 
-    color: ${({ theme }) => theme.cyanBlueDarkShade};
-    font-size: 1rem;
-    font-weight: 300;
+    span {
+      color: ${({ theme }) => theme.cyanBlueDarkShade};
+      font-size: 1rem;
+      font-weight: 300;
+    }
 
     margin: 0.9375rem 0;
   }
@@ -197,6 +243,41 @@ export const ProductInfoWrapper = styled.div`
     border-radius: 50%;
 
     background: ${({ theme }) => theme.blue};
+  }
+
+  @media (max-width: 430px) {
+    .productDescription {
+      display: none;
+    }
+
+    .stockAmountWrapper {
+      margin: 0.625rem 0;
+
+      span {
+        font-size: 0.75rem;
+      }
+    }
+  }
+`
+
+export const ProductDescriptionMobile = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 430px) {
+    display: none;
+  }
+
+  @media (max-width: 430px) {
+    align-self: center;
+
+    span {
+      color: ${({ theme }) => theme.gray};
+      font-size: 0.75rem;
+      line-height: 1rem;
+      text-align: center;
+    }
   }
 `
 

@@ -7,6 +7,10 @@ export const FeaturesContainer = styled.div`
 
   margin: 2rem 0;
 
+  @media (max-width: 430px) {
+    margin: 1.5rem 0;
+  }
+
   span {
     color: ${({ theme }) => theme.gray};
     font-size: 1rem;
