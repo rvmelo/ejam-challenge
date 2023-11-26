@@ -314,6 +314,25 @@ export const PromotionContainer = styled.div`
       color: ${({ theme }) => theme.blue};
     }
   }
+
+  @media (max-width: 430px) {
+    margin: 0 1.25rem 1.5rem;
+
+    span {
+      font-size: 0.875rem;
+    }
+
+    .logoWrapper {
+      width: 1.5rem;
+      height: 1.5rem;
+      padding: 3.7px;
+    }
+
+    img {
+      width: 1rem;
+      height: 1rem;
+    }
+  }
 `
 
 export const DiscountButton = styled.div`
@@ -331,7 +350,7 @@ export const DiscountButton = styled.div`
   }
 
   border-radius: 50px;
-  width: 100%;
+  min-width: 100%;
 
   padding: 1rem;
 
@@ -340,6 +359,25 @@ export const DiscountButton = styled.div`
   cursor: pointer;
 
   background: ${({ theme }) => theme.green3};
+
+  @media (max-width: 430px) {
+    gap: 1rem;
+
+    padding: 1rem 3.5rem;
+
+    margin: 0 1.25rem 0.75rem;
+    min-width: 0;
+
+    span {
+      font-size: 0.875rem;
+      white-space: nowrap;
+    }
+
+    img {
+      width: 0.75rem;
+      height: 0.75rem;
+    }
+  }
 `
 
 export const RefuseButton = styled.div`
