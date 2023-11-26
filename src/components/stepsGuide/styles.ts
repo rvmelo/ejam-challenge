@@ -49,7 +49,38 @@ export const GuideItem = styled.div<GuideItemProps>`
   }
 
   span {
-    color: ${({ theme }) => theme.black};
     font-size: 1.25rem;
+    color: ${({ theme }) => theme.black};
+  }
+
+  @media (min-width: 430px) {
+    .small-text {
+      display: none;
+    }
+  }
+
+  @media (max-width: 430px) {
+    flex-direction: column;
+    gap: 8px;
+
+    span {
+      font-size: 0.75rem;
+    }
+
+    .stepIndicator {
+      height: 1.25rem;
+      width: 1.25rem;
+
+      margin-right: 0;
+
+      img {
+        height: 7px;
+        width: 10px;
+      }
+    }
+
+    .regular-text {
+      display: none;
+    }
   }
 `

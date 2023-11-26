@@ -7,10 +7,26 @@ export const LogoContainer = styled.div`
   justify-content: space-between;
 
   padding: 1.875rem 0;
+
+  @media (max-width: 430px) {
+    .clarifion-logo {
+      width: 106.67px;
+      height: 20px;
+    }
+
+    .software-logo {
+      width: 101px;
+      height: 16px;
+    }
+  }
 `
 
 export const ContentWrapper = styled.div`
   padding: 0 7.9375rem;
+
+  @media (max-width: 430px) {
+    padding: 0 1.25rem;
+  }
 `
 
 export const OrderTextContainer = styled.div`
@@ -30,5 +46,16 @@ export const OrderTextContainer = styled.div`
     color: ${({ theme }) => theme.gray};
     font-size: 1.5rem;
     text-align: center;
+  }
+
+  @media (max-width: 430px) {
+    .orderText {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .orderInfoText {
+      font-size: 1rem;
+    }
   }
 `

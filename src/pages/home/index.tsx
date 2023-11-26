@@ -13,8 +13,8 @@ export const Home: React.FC = () => {
       <Header />
       <ContentWrapper>
         <LogoContainer>
-          <img src={clarifionLogo} alt="" />
-          <img src={softwareLogo} alt="" />
+          <img className="clarifion-logo" src={clarifionLogo} alt="" />
+          <img className="software-logo" src={softwareLogo} alt="" />
         </LogoContainer>
         <OrderTextContainer>
           <span className="orderText">Wait ! your order in progress.</span>
