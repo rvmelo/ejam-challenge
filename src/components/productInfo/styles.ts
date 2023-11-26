@@ -9,6 +9,12 @@ export const ProductContainer = styled.div`
   flex-direction: row;
   gap: 2.5rem;
   margin: 2.5rem 0 3.8125rem;
+
+  @media (max-width: 430px) {
+    padding: 0;
+    flex-direction: column;
+    margin: 1.5rem 0 0;
+  }
 `
 
 export const LeftWrapper = styled.div`
@@ -16,6 +22,27 @@ export const LeftWrapper = styled.div`
   flex-direction: column;
 
   gap: 1.5rem;
+
+  @media (max-width: 430px) {
+    .topText-mobile {
+      color: ${({ theme }) => theme.black};
+      font-size: 1.5rem;
+      line-height: 2.1rem;
+      text-align: center;
+
+      .topHighlightedText {
+        color: ${({ theme }) => theme.blue};
+      }
+    }
+  }
+
+  @media (max-width: 430px) {
+    .product-image {
+      width: 20rem;
+      height: 20.5rem;
+      align-self: center;
+    }
+  }
 `
 
 export const UserFeedbackContainer = styled.div`
@@ -68,6 +95,10 @@ export const RightWrapper = styled.div`
     color: ${({ theme }) => theme.black};
     font-size: 2rem;
     line-height: 2.8rem;
+
+    @media (max-width: 430px) {
+      display: none;
+    }
   }
 
   .topHighlightedText {

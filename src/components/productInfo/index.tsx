@@ -31,7 +31,14 @@ export const ProductInfo: React.FC = () => {
   return (
     <ProductContainer>
       <LeftWrapper>
-        <img src={productImage} alt="" />
+        <span className="topText-mobile">
+          <span className="topHighlightedText">ONE TIME ONLY</span> special
+          price for 6 extra Clarifion for only{' '}
+          <span className="topHighlightedText">$14 each</span> ($84.00 total!)
+        </span>
+
+        <img className="product-image" src={productImage} alt="" />
+
         <UserFeedbackContainer>
           <UserHeaderContainer>
             <img src={userPhoto} alt="" />
@@ -88,7 +95,7 @@ export const ProductInfo: React.FC = () => {
             <img src={percentLogo} alt="" />
           </div>
           <span>
-            Save <span className="highlightedText">53%</span> and get
+            Save <span className="highlightedText">53%</span> and get{' '}
             <span className="highlightedText">6 extra Clarifision</span> for
             only <span className="highlightedText">$14 Each</span>.
           </span>

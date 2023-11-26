@@ -27,6 +27,7 @@ export const HeaderContainer = styled.div`
 
   @media (max-width: 430px) {
     justify-content: center;
+    height: 2.625rem;
 
     .hidable-item {
       display: none;

@@ -9,6 +9,8 @@ export const LogoContainer = styled.div`
   padding: 1.875rem 0;
 
   @media (max-width: 430px) {
+    padding: 1.25rem;
+
     .clarifion-logo {
       width: 106.67px;
       height: 20px;
@@ -25,6 +27,7 @@ export const ContentWrapper = styled.div`
   padding: 0 7.9375rem;
 
   @media (max-width: 430px) {
+    align-self: center;
     padding: 0 1.25rem;
   }
 `
@@ -49,6 +52,8 @@ export const OrderTextContainer = styled.div`
   }
 
   @media (max-width: 430px) {
+    margin-bottom: 1.5rem;
+
     .orderText {
       font-size: 2rem;
       margin-bottom: 1.5rem;
