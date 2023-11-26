@@ -24,4 +24,26 @@ export const HeaderContainer = styled.div`
       margin-right: 8px;
     }
   }
+
+  @media (max-width: 430px) {
+    justify-content: center;
+
+    .hidable-item {
+      display: none;
+    }
+
+    .changeable-div {
+      margin: 0 1.65625rem;
+    }
+  }
+
+  @media (min-width: 430px) {
+    .hidable-arrow {
+      display: none;
+    }
+  }
+
+  .hidable-arrow {
+    cursor: pointer;
+  }
 `
