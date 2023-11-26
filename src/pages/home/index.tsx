@@ -5,6 +5,7 @@ import clarifionLogo from '../../assets/clarifon-logo.svg'
 import softwareLogo from '../../assets/software-logo.svg'
 import { StepsGuide } from '../../components/stepsGuide'
 import { ProductInfo } from '../../components/productInfo'
+import { Baseboard } from '../../components/baseboard'
 
 export const Home: React.FC = () => {
   return (
@@ -25,6 +26,7 @@ export const Home: React.FC = () => {
         <StepsGuide />
         <ProductInfo />
       </ContentWrapper>
+      <Baseboard />
     </>
   )
 }
