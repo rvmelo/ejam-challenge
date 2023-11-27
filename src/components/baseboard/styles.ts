@@ -34,4 +34,14 @@ export const BaseboardContainer = styled.div`
   img {
     margin-right: 1rem;
   }
+
+  @media (max-width: 430px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    span {
+      font-size: 0.75rem;
+    }
+  }
 `
