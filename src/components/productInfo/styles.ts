@@ -396,6 +396,13 @@ export const RefuseButton = styled.div`
     height: 0.25px;
     border: 0.25px solid ${({ theme }) => theme.red};
   }
+
+  @media (max-width: 430px) {
+    margin-bottom: 1.5rem;
+    span {
+      font-size: 0.75rem;
+    }
+  }
 `
 
 export const GuaranteeContainer = styled.div`
@@ -413,6 +420,20 @@ export const GuaranteeContainer = styled.div`
     .highlightedText {
       color: ${({ theme }) => theme.gray};
       font-weight: 700;
+    }
+  }
+
+  @media (max-width: 430px) {
+    align-items: flex-start;
+    margin: 0 1.25rem 3.125rem;
+
+    span {
+      font-size: 0.75rem;
+    }
+
+    img {
+      width: 3rem;
+      height: 3rem;
     }
   }
 `
