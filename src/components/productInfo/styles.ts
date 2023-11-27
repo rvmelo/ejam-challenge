@@ -100,7 +100,6 @@ export const UserInfoContainer = styled.div`
 export const RightWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
 
   .topText {
     color: ${({ theme }) => theme.black};
@@ -384,6 +383,12 @@ export const RefuseButton = styled.div`
   cursor: pointer;
   margin-bottom: 2rem;
 
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   span {
     color: ${({ theme }) => theme.red};
     font-size: 1.125rem;
@@ -391,16 +396,20 @@ export const RefuseButton = styled.div`
     /* text-decoration: underline; */
   }
 
-  div {
-    width: 100%;
+  .underline {
+    width: 16.8rem;
     height: 0.25px;
-    border: 0.25px solid ${({ theme }) => theme.red};
+    border-bottom: 0.25px solid ${({ theme }) => theme.red};
   }
 
   @media (max-width: 430px) {
     margin-bottom: 1.5rem;
     span {
       font-size: 0.75rem;
+    }
+
+    .underline {
+      width: 11.2rem;
     }
   }
 `

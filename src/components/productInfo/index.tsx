@@ -115,8 +115,10 @@ export const ProductInfo: React.FC = () => {
         </DiscountButton>
         <PurchaseInfo />
         <RefuseButton>
-          <span>NO THANKS, I DON&apos;T WANT THIS.</span>
-          <div />
+          <div>
+            <span>NO THANKS, I DON&apos;T WANT THIS.</span>
+            <div className="underline" />
+          </div>
         </RefuseButton>
         <GuaranteeContainer>
           <img src={guaranteeLogo} alt="" />
