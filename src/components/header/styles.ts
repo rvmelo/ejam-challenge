@@ -33,8 +33,14 @@ export const HeaderContainer = styled.div`
       display: none;
     }
 
-    .changeable-div {
+    .mobile-div {
       margin: 0 1.65625rem;
+    }
+  }
+
+  @media (min-width: 430px) {
+    .mobile-div {
+      display: none;
     }
   }
 
